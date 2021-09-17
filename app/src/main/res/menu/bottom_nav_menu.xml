@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_lugares"
+        android:icon="@drawable/ic_menu_lugares"
+        android:title="Lugares" />
+
+    <item
+        android:id="@+id/navigation_trocas"
+        android:icon="@drawable/ic_menu_trocas"
+        android:title="Trocas" />
+
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/ic_menu_perfil"
+        android:title="Perfil" />
+
+</menu>

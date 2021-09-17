@@ -10,6 +10,7 @@
     <color name="system_neutral1_100">#e2e2e2</color>
     <color name="verde1">#96BB7C</color>
     <color name="grey1">#646973</color>
+    <color name="bg">#EBEBEB</color>
     <color name="red1">#C0392B</color>
     <color name="verde2">#1D2815</color>
 </resources>
