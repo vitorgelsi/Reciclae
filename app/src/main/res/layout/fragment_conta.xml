@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
-    tools:context=".fragments.ContaFragment">
+    android:background="@color/backgroundLight"
+    tools:context=".fragments.PerfilFragment">
 
     <TextView
         android:id="@+id/txv_reciclae"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/rancho_regular"
         android:text="Reciclaê"
-        android:textColor="@color/verde1"
+        android:textColor="@color/primaryDarkColor"
         android:textSize="60dp"
         app:layout_constraintEnd_toEndOf="@id/btn_dd_pessoais"
         app:layout_constraintStart_toStartOf="@id/btn_dd_pessoais"
@@ -24,9 +24,11 @@
         android:id="@+id/txv_meu_perfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="35dp"
         android:text="Meu Perfil"
+        android:textSize="30sp"
+        android:fontFamily="@font/opensans_semibold"
         app:layout_constraintBottom_toTopOf="@id/btn_dd_pessoais"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txv_reciclae" />
@@ -36,60 +38,82 @@
         android:id="@+id/txv_servicos_conectados"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="25dp"
         android:text="Serviços Conectados"
+        android:textSize="30sp"
+        android:fontFamily="@font/opensans_semibold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_senha" />
 
     <Button
         android:id="@+id/btn_dd_pessoais"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:backgroundTint="@color/backgroundWhite"
         android:gravity="start|center_vertical"
         android:text="Dados Pessoais"
-        android:textColor="@color/grey1"
+        android:textColor="@color/primaryTextColor"
+        android:fontFamily="@font/opensans"
         app:layout_constraintTop_toBottomOf="@id/txv_meu_perfil" />
 
     <Button
         android:id="@+id/btn_pontuacao"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:backgroundTint="@color/backgroundWhite"
         android:gravity="start|center_vertical"
         android:text="pontuação"
-        android:textColor="@color/grey1"
+        android:textColor="@color/primaryTextColor"
+        android:fontFamily="@font/opensans"
         app:layout_constraintTop_toBottomOf="@id/btn_dd_pessoais" />
 
     <Button
         android:id="@+id/btn_email"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:gravity="start|center_vertical"
         android:text="e-mail"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/grey1"
+        android:backgroundTint="@color/backgroundWhite"
+        android:textColor="@color/primaryTextColor"
+        android:fontFamily="@font/opensans"
         app:layout_constraintTop_toBottomOf="@id/btn_pontuacao" />
 
     <Button
         android:id="@+id/btn_senha"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:gravity="start|center_vertical"
         android:text="senha"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/grey1"
+        android:backgroundTint="@color/backgroundWhite"
+        android:textColor="@color/primaryTextColor"
+        android:fontFamily="@font/opensans"
         app:layout_constraintTop_toBottomOf="@id/btn_email" />
 
     <Button
         android:id="@+id/btn_navegacao"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:gravity="start|center_vertical"
         android:text="Navegação"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/grey1"
+        android:backgroundTint="@color/backgroundWhite"
+        android:textColor="@color/primaryTextColor"
+        android:fontFamily="@font/opensans"
         app:layout_constraintTop_toBottomOf="@id/txv_servicos_conectados" />
 
 
@@ -98,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sair"
-        android:backgroundTint="@color/red1"
+        android:backgroundTint="@color/primaryColor"
         app:layout_constraintTop_toBottomOf="@id/btn_navegacao"
         app:layout_constraintEnd_toEndOf="@id/btn_navegacao"
         app:layout_constraintStart_toStartOf="@id/btn_navegacao"

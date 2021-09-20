@@ -6,16 +6,83 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.TrocasFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/trocas"
+        android:id="@+id/txv_reciclae"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trocas"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/rancho_regular"
+        android:text="Reciclaê"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="60sp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_avatar_xl"
+        android:maxHeight="80dp"
+        android:maxWidth="80dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintTop_toBottomOf="@id/txv_reciclae"
+        app:layout_constraintBottom_toTopOf="@id/txv_total"
+        app:layout_constraintStart_toStartOf="@id/txv_reciclae"
+        app:layout_constraintEnd_toEndOf="@id/txv_reciclae" />
+
+    <TextView
+        android:id="@+id/txv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Pontuação"
+        android:fontFamily="@font/opensans_semibold"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_reciclae" />
+
+    <TextView
+        android:id="@+id/txv_total_reais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="R$32,50"
+        android:fontFamily="@font/opensans"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_total" />
+
+    <TextView
+        android:id="@+id/txv_ultimas_trocas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Últimas Trocas"
+        android:fontFamily="@font/opensans_semibold"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_total_reais" />
+
+<!--    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trocas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:textSize="36sp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

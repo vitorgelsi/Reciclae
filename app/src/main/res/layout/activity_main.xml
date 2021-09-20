@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/system_neutral1_100"
+    android:background="@color/backgroundLight"
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:padding="25dp">
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:text="Reciclaê"
-        android:textColor="@color/verde1"
+        android:textColor="@color/primaryColor"
         android:textSize="60dp"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:textSize="20sp"
-        android:textColor="@color/grey1"
+        android:textColor="@color/primaryTextColor"
         android:layout_marginTop="80dp"
         />
 
@@ -39,15 +39,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="E-mail"
-        android:textColorHighlight="@color/verde2"
-        android:textColorLink="@color/verde2" />
+        android:textColorHighlight="@color/primaryLightColor"
+        android:textColorLink="@color/primaryLightColor" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
-        android:textColorHighlight="@color/verde2"
-        android:textColorLink="@color/verde2" />
+        android:textColorHighlight="@color/primaryLightColor"
+        android:textColorLink="@color/primaryLightColor" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -60,14 +60,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="60dp"
-            android:backgroundTint="@color/verde1"
+            android:backgroundTint="@color/primaryColor"
             android:text="Cadastrar" />
 
         <Button
             android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/verde1"
+            android:backgroundTint="@color/primaryColor"
             android:text="Login" />
 </LinearLayout>
 </LinearLayout>
