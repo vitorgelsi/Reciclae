@@ -7,7 +7,7 @@
     <color name="secondaryLightColor">#85bb5c</color>
     <color name="secondaryDarkColor">#255d00</color>
     <color name="primaryTextColor">#000000</color>
-    <color name="secondaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#121212</color>
     <color name="errorColor">#C0392B</color>
     <color name="backgroundLight">#ECEFF3</color>
     <color name="backgroundWhite">#FFFFFF</color>

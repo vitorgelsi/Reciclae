@@ -9,7 +9,11 @@
         android:id="@+id/dashFragment"
         android:name="com.example.android.recicla.DashFragment"
         android:label="fragment_dash"
-        tools:layout="@layout/fragment_dash" />
+        tools:layout="@layout/fragment_dash" >
+        <action
+            android:id="@+id/action_dashFragment_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.android.recicla.ProfileFragment"
@@ -20,4 +24,13 @@
         android:name="com.example.android.recicla.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/receiptFragment"
+        android:name="com.example.android.recicla.ReceiptFragment"
+        android:label="fragment_receipt"
+        tools:layout="@layout/fragment_receipt" >
+        <action
+            android:id="@+id/action_receiptFragment_to_dashFragment"
+            app:destination="@id/dashFragment" />
+    </fragment>
 </navigation>

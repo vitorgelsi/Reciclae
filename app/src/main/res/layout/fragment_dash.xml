@@ -85,7 +85,7 @@
         android:insetBottom="0dp"
         android:layout_marginTop="10dp"
         android:gravity="start|center_vertical"
-        android:text="Bar do Pedrão\nR$0,70"
+        android:text="Bar do Pedrão\nR$0,60"
         android:backgroundTint="@color/backgroundWhite"
         android:textColor="@color/primaryTextColor"
         android:fontFamily="@font/fonts"
