@@ -54,7 +54,7 @@
         android:gravity="start|center_vertical"
         android:text="Dados Pessoais"
         android:textColor="@color/primaryTextColor"
-        android:fontFamily="@font/opensans"
+        android:fontFamily="@font/fonts"
         app:layout_constraintTop_toBottomOf="@id/txv_meu_perfil" />
 
     <Button
@@ -65,7 +65,7 @@
         android:gravity="start|center_vertical"
         android:text="pontuação"
         android:textColor="@color/primaryTextColor"
-        android:fontFamily="@font/opensans"
+        android:fontFamily="@font/fonts"
         app:layout_constraintTop_toBottomOf="@id/btn_dd_pessoais" />
 
     <Button
@@ -76,7 +76,7 @@
         android:text="e-mail"
         android:backgroundTint="@color/backgroundLight"
         android:textColor="@color/primaryTextColor"
-        android:fontFamily="@font/opensans"
+        android:fontFamily="@font/fonts"
         app:layout_constraintTop_toBottomOf="@id/btn_pontuacao" />
 
     <Button
@@ -87,7 +87,7 @@
         android:text="senha"
         android:backgroundTint="@color/backgroundLight"
         android:textColor="@color/primaryTextColor"
-        android:fontFamily="@font/opensans"
+        android:fontFamily="@font/fonts"
         app:layout_constraintTop_toBottomOf="@id/btn_email" />
 
     <Button
@@ -98,7 +98,7 @@
         android:text="Navegação"
         android:backgroundTint="@color/backgroundLight"
         android:textColor="@color/primaryTextColor"
-        android:fontFamily="@font/opensans"
+        android:fontFamily="@font/fonts"
         app:layout_constraintTop_toBottomOf="@id/txv_servicos_conectados" />
 
 
