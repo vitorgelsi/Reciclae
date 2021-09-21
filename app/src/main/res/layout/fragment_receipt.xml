@@ -11,7 +11,7 @@
         android:id="@+id/txv_total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="Bar do Pedrão"
         android:fontFamily="@font/opensans_semibold"
         android:textColor="@color/primaryTextColor"
@@ -37,7 +37,7 @@
         android:id="@+id/txv_recibo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="Recibo"
         android:fontFamily="@font/opensans_semibold"
         android:textColor="@color/primaryTextColor"
@@ -168,7 +168,7 @@
         android:id="@+id/txv_total_troca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:text="Total da Troca"
         android:fontFamily="@font/opensans_semibold"
         android:textColor="@color/primaryTextColor"
@@ -190,17 +190,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txv_total_troca" />
 
+    <TextView
+        android:id="@+id/txv_total_acumulado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Total Acumulado"
+        android:fontFamily="@font/opensans_semibold"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_total_troca_valor" />
+
+    <TextView
+        android:id="@+id/txv_total_acumulado_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="R$5,30"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_total_acumulado" />
+
     <ImageView
         android:id="@+id/img_qr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_qr_code_128"
-        android:scaleType="fitCenter"
-        android:adjustViewBounds="true"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="@id/txv_total"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/qr_ex"
         app:layout_constraintEnd_toEndOf="@id/txv_total"
-        app:layout_constraintTop_toBottomOf="@id/txv_total_troca_valor" />
+        app:layout_constraintStart_toStartOf="@id/txv_total"
+        app:layout_constraintTop_toBottomOf="@id/txv_total_acumulado_valor" />
 
     <TextView
         android:id="@+id/txv_qr_text"
