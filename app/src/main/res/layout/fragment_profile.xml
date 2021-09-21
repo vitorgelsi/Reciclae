@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/backgroundLight"
-    tools:context=".fragments.PerfilFragment">
+    tools:context=".ProfileFragment">
 
     <TextView
         android:id="@+id/txv_reciclae"
@@ -48,9 +48,12 @@
 
     <Button
         android:id="@+id/btn_dd_pessoais"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/backgroundLight"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:backgroundTint="@color/backgroundWhite"
         android:gravity="start|center_vertical"
         android:text="Dados Pessoais"
         android:textColor="@color/primaryTextColor"
@@ -59,9 +62,12 @@
 
     <Button
         android:id="@+id/btn_pontuacao"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/backgroundLight"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:backgroundTint="@color/backgroundWhite"
         android:gravity="start|center_vertical"
         android:text="pontuação"
         android:textColor="@color/primaryTextColor"
@@ -70,33 +76,42 @@
 
     <Button
         android:id="@+id/btn_email"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:gravity="start|center_vertical"
         android:text="e-mail"
-        android:backgroundTint="@color/backgroundLight"
+        android:backgroundTint="@color/backgroundWhite"
         android:textColor="@color/primaryTextColor"
         android:fontFamily="@font/fonts"
         app:layout_constraintTop_toBottomOf="@id/btn_pontuacao" />
 
     <Button
         android:id="@+id/btn_senha"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:gravity="start|center_vertical"
         android:text="senha"
-        android:backgroundTint="@color/backgroundLight"
+        android:backgroundTint="@color/backgroundWhite"
         android:textColor="@color/primaryTextColor"
         android:fontFamily="@font/fonts"
         app:layout_constraintTop_toBottomOf="@id/btn_email" />
 
     <Button
         android:id="@+id/btn_navegacao"
+        android:stateListAnimator="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:gravity="start|center_vertical"
         android:text="Navegação"
-        android:backgroundTint="@color/backgroundLight"
+        android:backgroundTint="@color/backgroundWhite"
         android:textColor="@color/primaryTextColor"
         android:fontFamily="@font/fonts"
         app:layout_constraintTop_toBottomOf="@id/txv_servicos_conectados" />

@@ -1,4 +1,4 @@
-package com.example.android.recicla.fragments
+package com.example.android.recicla
 
 import android.graphics.Color
 import android.graphics.Typeface
@@ -34,7 +34,7 @@ class MapsFragment : Fragment() {
          */
         val barDoPedrao = LatLng(-23.5746685,-46.6232043)
         val barDoJura = LatLng(-23.5643721,-46.652857)
-        val oSujinho = LatLng(-23.5746685,-46.6232043)
+        val oSujinho = LatLng(-23.5955843,-46.6851937)
 
 
         googleMap.addMarker(MarkerOptions()
@@ -51,34 +51,6 @@ class MapsFragment : Fragment() {
         googleMap.addMarker(MarkerOptions()
             .position(oSujinho)
             .title("O Sujinho"))
-
-//        googleMap.setInfoWindowAdapter(object : GoogleMap.InfoWindowAdapter {
-//            override fun getInfoWindow(arg0: Marker): View? {
-//                return null
-//            }
-//
-//            override fun getInfoContents(marker: Marker): View? {
-////                val info = LinearLayout(applicationContext)
-////                info.orientation = LinearLayout.VERTICAL
-////
-////                //--Título
-////                val title = TextView(applicationContext)
-////                title.setTextColor(Color.BLACK)
-////                title.gravity = Gravity.LEFT
-////                title.setTypeface(null, Typeface.BOLD)
-////                title.text = marker.title
-////
-////                //--Complemento
-////                val snippet = TextView(applicationContext)
-////                snippet.setTextColor(Color.GRAY)
-////                snippet.text = marker.snippet
-////
-////                //--Adiciona o titulo e o complemento na marca
-////                info.addView(title)
-////                info.addView(snippet)
-////                return info
-////            }
-//        })
     }
 
     override fun onCreateView(
