@@ -207,7 +207,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
-        android:text="Mostre a um funcionário para aplciar o desconto."
+        android:text="Mostre a um funcionário para aplicar o desconto."
         android:fontFamily="@font/fonts"
         android:textColor="@color/primaryTextColor"
         android:textSize="13sp"
