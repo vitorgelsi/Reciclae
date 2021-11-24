@@ -1,5 +1,6 @@
 package com.example.android.recicla
 
+import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.fragment.app.Fragment
@@ -41,16 +42,18 @@ class MapsFragment : Fragment() {
             .position(barDoPedrao)
             .title("Bar do Pedrão")
             .snippet("Garrafas PET\nGarrafas de Vidro\nLatas de Alumínio")
-            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)))
+            .icon(BitmapDescriptorFactory.fromResource(R.drawable.locais)))
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(barDoPedrao, 12.5F))
 
         googleMap.addMarker(MarkerOptions()
             .position(barDoJura)
-            .title("Bar do Jura"))
+            .title("Bar do Jura")
+            .icon(BitmapDescriptorFactory.fromResource(R.drawable.locais)))
 
         googleMap.addMarker(MarkerOptions()
             .position(oSujinho)
-            .title("O Sujinho"))
+            .title("O Sujinho")
+            .icon(BitmapDescriptorFactory.fromResource(R.drawable.locais)))
     }
 
     override fun onCreateView(
