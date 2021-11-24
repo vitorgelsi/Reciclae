@@ -1,22 +1,12 @@
 package com.example.android.recicla
 
-import android.graphics.BitmapFactory
-import android.graphics.Color
-import android.graphics.Typeface
-import androidx.fragment.app.Fragment
 
+import androidx.fragment.app.Fragment
 import android.os.Bundle
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.LinearLayout.*
-import android.widget.TextView
-import com.example.android.recicla.R
-
 import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.*
@@ -38,24 +28,25 @@ class MapsFragment : Fragment() {
         val oSujinho = LatLng(-23.5955843,-46.6851937)
 
 
+
         googleMap.addMarker(MarkerOptions()
             .position(barDoPedrao)
             .title("Bar do Pedrão")
-            .snippet("Garrafas PET\nGarrafas de Vidro\nLatas de Alumínio")
+            .snippet("Garrafas PET, Garrafas de Vidro")
             .icon(BitmapDescriptorFactory.fromResource(R.drawable.locais)))
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(barDoPedrao, 12.5F))
 
         googleMap.addMarker(MarkerOptions()
             .position(barDoJura)
             .title("Bar do Jura")
+            .snippet("Latas de Alumínio")
             .icon(BitmapDescriptorFactory.fromResource(R.drawable.locais)))
 
         googleMap.addMarker(MarkerOptions()
             .position(oSujinho)
             .title("O Sujinho")
+            .snippet("Isopor")
             .icon(BitmapDescriptorFactory.fromResource(R.drawable.locais)))
-
-
     }
 
     override fun onCreateView(
