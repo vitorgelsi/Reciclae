@@ -54,6 +54,8 @@ class MapsFragment : Fragment() {
             .position(oSujinho)
             .title("O Sujinho")
             .icon(BitmapDescriptorFactory.fromResource(R.drawable.locais)))
+
+
     }
 
     override fun onCreateView(

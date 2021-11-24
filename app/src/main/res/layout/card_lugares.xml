@@ -23,7 +23,7 @@
             android:textStyle="bold" />
 
         <LinearLayout
-            android:id="@+id/distanceLayout"
+            android:id="@+id/itensAceitos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtLocationName"
@@ -38,7 +38,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtLocationDistance"
+                android:id="@+id/txtItensAceitos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
@@ -52,7 +52,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/distanceLayout"
+            android:layout_below="@+id/itensAceitos"
             android:layout_marginTop="5dp"
 
             android:orientation="horizontal">
@@ -65,7 +65,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtLocationTime"
+                android:id="@+id/txtAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
